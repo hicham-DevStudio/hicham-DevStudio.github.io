@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hicham | Développeur Web en Formation</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6; 
+            color: #333;
+            background: #f8fafc;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        
+        .status {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        
+        section { padding: 3rem 0; }
+        
+        .about {
+            background: white;
+            text-align: center;
+        }
+        
+        .about h2 {
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        
+        .about p {
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .learning {
+            background: #f1f5f9;
+        }
+        
+        .learning h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1e293b;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .skill-card h3 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        
+        .projects {
+            background: white;
+        }
+        
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1e293b;
+        }
+        
+        .project-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: border-color 0.3s;
+        }
+        
+        .project-card:hover {
+            border-color: #2563eb;
+        }
+        
+        .project-card h3 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-card .badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #2563eb;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .project-links {
+            margin-top: 1rem;
+        }
+        
+        .project-links a {
+            display: inline-block;
+            color: #2563eb;
+            text-decoration: none;
+            margin-right: 1rem;
+            font-weight: 500;
+        }
+        
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .cta {
+            background: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+        .cta h2 { margin-bottom: 1rem; }
+        .cta p { margin-bottom: 1.5rem; opacity: 0.9; }
+        
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #2563eb;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hicham</h1>
+            <p>Développeur Web Full-Stack en Formation</p>
+            <span class="status">🟢 Disponible pour missions</span>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis en reconversion professionnelle dans le développement web. 
+                Passionné par la création de sites modernes et performants, 
+                je construis mon portfolio projet par projet pour maîtriser 
+                les technologies actuelles du web.
+            </p>
+            <p>
+                <strong>Mon objectif :</strong> Accompagner les entreprises dans 
+                leur présence digitale avec des solutions sur mesure.
+            </p>
+        </div>
+    </section>
+
+    <section class="learning">
+        <div class="container">
+            <h2>Ce que j'apprends</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>🎨 Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                    <h3>⚙️ Backend</h3>
+                    <p>Node.js, Express, bases de données</p>
+                </div>
+                <div class="skill-card">
+                    <h3>🚀 Déploiement</h3>
+                    <p>Git, GitHub, GitHub Pages, Vercel</p>
+                </div>
+                <div class="skill-card">
+                    <h3>🎓 En cours</h3>
+                    <p>TypeScript, Next.js, PostgreSQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Mes Projets d'Apprentissage</h2>
+            
+            <div class="project-card">
+                <span class="badge">Projet #1</span>
+                <h3>Site Vitrine Restaurant</h3>
+                <p>
+                    Mon premier site complet. J'ai appris à structurer une page, 
+                    styliser avec CSS, et créer un formulaire fonctionnel.
+                </p>
+                <p><strong>Technos :</strong> HTML, CSS, JavaScript</p>
+                <div class="project-links">
+                    <a href="https://hicham-devstudio.github.io/site-restaurant">🌐 Voir le site</a>
+                    <a href="https://github.com/hicham-devstudio/site-restaurant">💻 Code source</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <span class="badge">Projet #2</span>
+                <h3>Template E-commerce</h3>
+                <p>
+                    Un template de boutique en ligne avec panier fonctionnel. 
+                    J'ai appris la manipulation du DOM et la gestion d'état.
+                </p>
+                <p><strong>Technos :</strong> HTML, CSS, JavaScript</p>
+                <div class="project-links">
+                    <a href="https://hicham-devstudio.github.io/template-ecommerce">🌐 Voir le site</a>
+                    <a href="https://github.com/hicham-devstudio/template-ecommerce">💻 Code source</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <span class="badge">À venir</span>
+                <h3>Application React</h3>
+                <p>
+                    Prochain projet : une application complète avec React 
+                    et connexion à une API.
+                </p>
+                <p><strong>Technos :</strong> React, API REST</p>
+                <div class="project-links">
+                    <span style="color: #999;">🚧 En développement</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Travaillons ensemble</h2>
+            <p>
+                Je recherche des opportunités pour mettre en pratique mes compétences. 
+                Si vous avez un projet simple ou souhaitez me donner ma chance, 
+                contactez-moi !
+            </p>
+            <a href="mailto:contact@hicham-devstudio.com" class="btn">📧 Me contacter</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hicham. Développeur Web en formation.</p>
+            <p>📍 Paris, France | 💻 GitHub: @hicham-devstudio</p>
+        </div>
+    </footer>
+</body>
+</html>
